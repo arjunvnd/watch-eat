@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/watch-eat/static/css/main.82e0a6e5.chunk.css",
+    "main.js": "/watch-eat/static/js/main.7ce04a27.chunk.js",
+    "main.js.map": "/watch-eat/static/js/main.7ce04a27.chunk.js.map",
+    "runtime-main.js": "/watch-eat/static/js/runtime-main.ec383a5d.js",
+    "runtime-main.js.map": "/watch-eat/static/js/runtime-main.ec383a5d.js.map",
+    "static/js/2.dd190d02.chunk.js": "/watch-eat/static/js/2.dd190d02.chunk.js",
+    "static/js/2.dd190d02.chunk.js.map": "/watch-eat/static/js/2.dd190d02.chunk.js.map",
+    "index.html": "/watch-eat/index.html",
+    "precache-manifest.0dc49aa4436caa89f2a194f5e9cd7496.js": "/watch-eat/precache-manifest.0dc49aa4436caa89f2a194f5e9cd7496.js",
+    "service-worker.js": "/watch-eat/service-worker.js",
+    "static/css/main.82e0a6e5.chunk.css.map": "/watch-eat/static/css/main.82e0a6e5.chunk.css.map",
+    "static/js/2.dd190d02.chunk.js.LICENSE.txt": "/watch-eat/static/js/2.dd190d02.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec383a5d.js",
+    "static/js/2.dd190d02.chunk.js",
+    "static/css/main.82e0a6e5.chunk.css",
+    "static/js/main.7ce04a27.chunk.js"
+  ]
+}
