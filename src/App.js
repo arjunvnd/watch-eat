@@ -1,32 +1,43 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import ComponentList from "./Components/ComponentList/ComponentList";
 import About from "./Components/About/About";
 import Layout from "./Components/Layout/Layout";
 import { ThemeProvider } from "@material-ui/core";
-import theme from "./theme/theme";
+import { themeGreen, themePurple, themeRed } from "./theme/theme";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import history from "./utils/history";
 
-function App() {
+function App(props) {
+  const switchTheme = () => {
+    if (history.location.pathname.split("/").indexOf("red") > -1) {
+      return themeRed;
+    } else if (history.location.pathname.split("/").indexOf("green") > -1) {
+      return themeGreen;
+    }
+    return themePurple;
+  };
+
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={switchTheme()}>
       <CssBaseline />
       <Layout>
-        <Router>
-          <Switch>
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route exact path="/components">
-              <ComponentList />
-            </Route>
-            <Route exact path="/">
-              <Home />
-            </Route>
-          </Switch>
-        </Router>
+        <Switch>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/components">
+            <ComponentList />
+          </Route>
+          <Route exact path="/components/:color">
+            <ComponentList />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
       </Layout>
     </ThemeProvider>
   );
