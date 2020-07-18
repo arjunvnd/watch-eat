@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { withRouter } from "react-router-dom";
+
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
@@ -8,10 +10,14 @@ import Layout from "./Components/Layout/Layout";
 import { ThemeProvider } from "@material-ui/core";
 import { themeGreen, themePurple, themeRed } from "./theme/theme";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import history from "./utils/history";
+// import history from "./utils/history";
 
-function App(props) {
+function App({ history }) {
   const switchTheme = () => {
+    console.log(
+      "this is a render",
+      history.location.pathname.split("/").indexOf("red") > -1
+    );
     if (history.location.pathname.split("/").indexOf("red") > -1) {
       return themeRed;
     } else if (history.location.pathname.split("/").indexOf("green") > -1) {
@@ -43,4 +49,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default withRouter(App);

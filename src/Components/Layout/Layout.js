@@ -1,16 +1,13 @@
 import React from "react";
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import Header from "./Header/Header";
 // import PropTypes from 'prop-types'
 
 function Layout({ children }) {
   return (
     <>
       <section style={{ height: "64px" }}>
-        <AppBar>
-          <Toolbar>
-            <Typography variant="h6">Watch!Eat</Typography>
-          </Toolbar>
-        </AppBar>
+        <Header />
       </section>
 
       <main className="main-container">{children}</main>
