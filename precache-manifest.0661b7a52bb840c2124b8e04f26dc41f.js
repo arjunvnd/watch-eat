@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1d9e159d71d2488d0e6ab04c0e94408",
+    "revision": "c9cca6f58d8d098333514324f1338e26",
     "url": "/watch-eat/index.html"
   },
   {
-    "revision": "f0c92eaf85703eb55b93",
+    "revision": "a7447cf0ba075bf6b61c",
     "url": "/watch-eat/static/css/main.82e0a6e5.chunk.css"
   },
   {
-    "revision": "6811aa9985ff56fc348c",
-    "url": "/watch-eat/static/js/2.dd190d02.chunk.js"
+    "revision": "7d97d5f6095e991573c9",
+    "url": "/watch-eat/static/js/2.9de6b9c2.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/watch-eat/static/js/2.dd190d02.chunk.js.LICENSE.txt"
+    "url": "/watch-eat/static/js/2.9de6b9c2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f0c92eaf85703eb55b93",
-    "url": "/watch-eat/static/js/main.7ce04a27.chunk.js"
+    "revision": "a7447cf0ba075bf6b61c",
+    "url": "/watch-eat/static/js/main.a110f715.chunk.js"
   },
   {
     "revision": "cba0d7bd7107fcf89eba",
