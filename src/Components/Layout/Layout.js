@@ -1,5 +1,4 @@
 import React from "react";
-import { AppBar, Toolbar, Typography } from "@material-ui/core";
 import Header from "./Header/Header";
 // import PropTypes from 'prop-types'
 

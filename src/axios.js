@@ -1,5 +1,5 @@
 import axios from "axios";
 
-export const axiosJsonPlaceHolder = axios.create({
-  baseURL: "https://jsonplaceholder.typicode.com/posts"
+export const axiosPokemonList = axios.create({
+  baseURL: "https://pokeapi.co/api/v2/pokemon?offset=100&limit=100"
 });

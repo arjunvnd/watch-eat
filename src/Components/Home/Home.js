@@ -1,14 +1,28 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { connect } from "react-redux";
+
+import HomeGrid from "./subcomponents/HomeGridLayout";
+import { fetchPokemonList } from "../../redux/service/home";
 // import PropTypes from "prop-types";
 
-function Home(props) {
+function Home({ getPokemon }) {
+  useEffect(() => {
+    getPokemon();
+  }, []);
   return (
-    <div>
-      <span>This is the home page</span>
-    </div>
+    <>
+      <HomeGrid />
+    </>
   );
 }
 
+const mapDispatchToProps = dispatch => ({
+  getPokemon: () => dispatch(fetchPokemonList())
+});
+
 Home.propTypes = {};
 
-export default Home;
+export default connect(
+  null,
+  mapDispatchToProps
+)(Home);

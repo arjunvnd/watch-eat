@@ -3,8 +3,11 @@ import logger from "redux-logger";
 import ReduxThunk from "redux-thunk";
 
 import basic from "./reducers/basic";
+
+import pokemonList from "./reducers/pokemonList";
 const rootReducer = combineReducers({
-  basic
+  basic,
+  pokemonList
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

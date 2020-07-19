@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Drawer, List, ListItem } from "@material-ui/core";
+import { SwipeableDrawer, List, ListItem } from "@material-ui/core";
 import history from "../../../utils/history";
 
 const pages = [
@@ -16,7 +16,7 @@ function NavDrawer({ isOpen, onClose }) {
   };
   console.log(history);
   return (
-    <Drawer open={isOpen} onClose={onClose}>
+    <SwipeableDrawer open={isOpen} onClose={onClose}>
       <List>
         {pages.map(page => (
           <ListItem onClick={() => handleClick(page.link)} button key={page.id}>
@@ -24,7 +24,7 @@ function NavDrawer({ isOpen, onClose }) {
           </ListItem>
         ))}
       </List>
-    </Drawer>
+    </SwipeableDrawer>
   );
 }
 
