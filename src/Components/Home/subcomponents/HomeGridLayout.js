@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { connect } from "react-redux";
 
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import Grid from "@material-ui/core/Grid";
 import InfoCard from "./InfoCard";
 import { fetchPokemonList } from "../../../redux/service/home";

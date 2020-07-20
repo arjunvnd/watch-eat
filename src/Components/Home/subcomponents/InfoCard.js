@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import lizard from "../../../assets/images/lizard.jpg";
+// import lizard from "../../../assets/images/lizard.jpg";
 import {
   Card,
-  CardActionArea,
+  // CardActionArea,
   CardMedia,
-  CardContent,
-  Typography,
+  // CardContent,
+  // Typography,
   makeStyles,
   CardHeader,
   CardActions,

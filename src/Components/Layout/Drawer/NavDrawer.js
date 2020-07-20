@@ -7,7 +7,8 @@ const pages = [
   { id: 1, name: "Home", link: "/" },
   { id: 2, name: "Components", link: "/" },
   { id: 3, name: "Components (red)", link: "/components/red" },
-  { id: 4, name: "Components (green)", link: "/components/green" }
+  { id: 4, name: "Components (green)", link: "/components/green" },
+  { id: 5, name: "Covid Info", link: "/covid-info" }
 ];
 
 function NavDrawer({ isOpen, onClose }) {

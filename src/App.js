@@ -10,6 +10,7 @@ import Layout from "./Components/Layout/Layout";
 import { ThemeProvider } from "@material-ui/core";
 import { themeGreen, themePurple, themeRed } from "./theme/theme";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import CovidInfoLanding from "./Components/CovidInfo/CovidInfoLanding";
 // import history from "./utils/history";
 
 function App({ history }) {
@@ -42,6 +43,9 @@ function App({ history }) {
           </Route>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route exact path="/covid-info">
+            <CovidInfoLanding />
           </Route>
         </Switch>
       </Layout>
